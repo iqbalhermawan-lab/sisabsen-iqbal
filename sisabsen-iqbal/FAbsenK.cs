@@ -155,5 +155,11 @@ namespace sisabsen_iqbal
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            FRpt CBL = new FRpt();
+            CBL.ShowDialog();
+        }
     }
 }
