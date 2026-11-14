@@ -42,6 +42,7 @@ namespace sisabsen_iqbal
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.cmbJam = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,7 +52,6 @@ namespace sisabsen_iqbal
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,10 +61,9 @@ namespace sisabsen_iqbal
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(494, 145);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(329, 94);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(94, 27);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(65, 18);
             this.guna2HtmlLabel1.TabIndex = 20;
             this.guna2HtmlLabel1.Text = "Pilih Kelas";
             // 
@@ -73,10 +72,9 @@ namespace sisabsen_iqbal
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(71, 134);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(47, 87);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(75, 27);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(54, 18);
             this.guna2HtmlLabel4.TabIndex = 18;
             this.guna2HtmlLabel4.Text = "Tanggal";
             // 
@@ -85,10 +83,9 @@ namespace sisabsen_iqbal
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 41);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(16, 27);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(235, 39);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(163, 27);
             this.guna2HtmlLabel2.TabIndex = 13;
             this.guna2HtmlLabel2.Text = "Absensi Harian";
             // 
@@ -126,12 +123,11 @@ namespace sisabsen_iqbal
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(55, 568);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(37, 369);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 62;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1149, 393);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(971, 249);
             this.guna2DataGridView1.TabIndex = 12;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,10 +191,26 @@ namespace sisabsen_iqbal
             this.guna2Panel1.Controls.Add(this.guna2Shapes7);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1263, 1050);
+            this.guna2Panel1.Size = new System.Drawing.Size(1047, 676);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 5;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Silver;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(592, 220);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(127, 36);
+            this.guna2Button2.TabIndex = 37;
+            this.guna2Button2.Text = "CETAK 2";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -210,10 +222,9 @@ namespace sisabsen_iqbal
             this.guna2Button1.FillColor = System.Drawing.Color.Silver;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(888, 260);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button1.Location = new System.Drawing.Point(592, 169);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(190, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(127, 36);
             this.guna2Button1.TabIndex = 34;
             this.guna2Button1.Text = "CETAK";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -229,10 +240,9 @@ namespace sisabsen_iqbal
             this.cmbJam.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbJam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbJam.ItemHeight = 30;
-            this.cmbJam.Location = new System.Drawing.Point(71, 298);
-            this.cmbJam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbJam.Location = new System.Drawing.Point(47, 194);
             this.cmbJam.Name = "cmbJam";
-            this.cmbJam.Size = new System.Drawing.Size(300, 36);
+            this.cmbJam.Size = new System.Drawing.Size(201, 36);
             this.cmbJam.TabIndex = 32;
             this.cmbJam.DropDown += new System.EventHandler(this.cmbJam_DropDown);
             // 
@@ -241,10 +251,9 @@ namespace sisabsen_iqbal
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(71, 260);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(47, 169);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(169, 27);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 18);
             this.guna2HtmlLabel3.TabIndex = 31;
             this.guna2HtmlLabel3.Text = "Pilih Jam Pelajaran";
             // 
@@ -259,10 +268,9 @@ namespace sisabsen_iqbal
             this.cmbKelas.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbKelas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbKelas.ItemHeight = 30;
-            this.cmbKelas.Location = new System.Drawing.Point(494, 181);
-            this.cmbKelas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbKelas.Location = new System.Drawing.Point(329, 118);
             this.cmbKelas.Name = "cmbKelas";
-            this.cmbKelas.Size = new System.Drawing.Size(300, 36);
+            this.cmbKelas.Size = new System.Drawing.Size(201, 36);
             this.cmbKelas.TabIndex = 30;
             this.cmbKelas.SelectedIndexChanged += new System.EventHandler(this.cmbKelas_SelectedIndexChanged);
             // 
@@ -275,12 +283,11 @@ namespace sisabsen_iqbal
             this.dtpTanggal.FillColor = System.Drawing.Color.Aqua;
             this.dtpTanggal.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpTanggal.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTanggal.Location = new System.Drawing.Point(71, 181);
-            this.dtpTanggal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpTanggal.Location = new System.Drawing.Point(47, 118);
             this.dtpTanggal.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTanggal.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTanggal.Name = "dtpTanggal";
-            this.dtpTanggal.Size = new System.Drawing.Size(300, 55);
+            this.dtpTanggal.Size = new System.Drawing.Size(200, 36);
             this.dtpTanggal.TabIndex = 29;
             this.dtpTanggal.Value = new System.DateTime(2026, 9, 10, 20, 50, 17, 672);
             this.dtpTanggal.ValueChanged += new System.EventHandler(this.dtpTanggal_ValueChanged);
@@ -298,10 +305,9 @@ namespace sisabsen_iqbal
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(888, 175);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(592, 114);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(190, 55);
+            this.btnAdd.Size = new System.Drawing.Size(127, 36);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Simpan Absensi";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -318,12 +324,12 @@ namespace sisabsen_iqbal
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(55, 480);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSearch.Location = new System.Drawing.Point(37, 306);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PlaceholderText = "Cari data siswa...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(364, 48);
+            this.txtSearch.Size = new System.Drawing.Size(243, 31);
             this.txtSearch.TabIndex = 8;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -333,14 +339,13 @@ namespace sisabsen_iqbal
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Shapes1.BorderColor = System.Drawing.Color.White;
             this.guna2Shapes1.FillColor = System.Drawing.Color.White;
-            this.guna2Shapes1.Location = new System.Drawing.Point(24, 450);
-            this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Shapes1.Location = new System.Drawing.Point(16, 286);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
             this.guna2Shapes1.RoundedRadius = 10;
             this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes1.Size = new System.Drawing.Size(1221, 546);
+            this.guna2Shapes1.Size = new System.Drawing.Size(1019, 355);
             this.guna2Shapes1.TabIndex = 7;
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 100;
@@ -351,44 +356,24 @@ namespace sisabsen_iqbal
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Shapes7.BorderColor = System.Drawing.Color.White;
             this.guna2Shapes7.FillColor = System.Drawing.Color.White;
-            this.guna2Shapes7.Location = new System.Drawing.Point(18, 111);
-            this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Shapes7.Location = new System.Drawing.Point(12, 72);
             this.guna2Shapes7.Name = "guna2Shapes7";
             this.guna2Shapes7.PolygonSkip = 1;
             this.guna2Shapes7.Rotate = 0F;
             this.guna2Shapes7.RoundedRadius = 10;
             this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes7.Size = new System.Drawing.Size(1227, 298);
+            this.guna2Shapes7.Size = new System.Drawing.Size(1023, 194);
             this.guna2Shapes7.TabIndex = 6;
             this.guna2Shapes7.Text = "guna2Shapes7";
             this.guna2Shapes7.Zoom = 100;
             this.guna2Shapes7.Click += new System.EventHandler(this.guna2Shapes7_Click);
             // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Silver;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(888, 339);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(190, 55);
-            this.guna2Button2.TabIndex = 37;
-            this.guna2Button2.Text = "CETAK 2";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
             // FAbsenH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1263, 1050);
+            this.ClientSize = new System.Drawing.Size(1047, 676);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FAbsenH";
             this.Text = "FAbsenH";
             this.Load += new System.EventHandler(this.FAbsenH_Load);

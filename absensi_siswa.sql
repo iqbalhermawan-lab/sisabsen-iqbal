@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2026 at 10:56 AM
+-- Generation Time: Nov 06, 2026 at 09:17 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -56,7 +56,12 @@ INSERT INTO `absensi` (`id_absensi`, `tanggal`, `id_kelas`, `jam_pelajaran`, `id
 (32, '2026-10-16', 13, 'Jam ke-03', 58, 'Sakit', 13),
 (33, '2026-10-16', 13, 'Jam ke-03', 59, 'Hadir', 13),
 (34, '2026-10-16', 13, 'Jam ke-03', 60, 'Sakit', 13),
-(35, '2026-10-16', 13, 'Jam ke-03', 61, 'Hadir', 13);
+(35, '2026-10-16', 13, 'Jam ke-03', 61, 'Hadir', 13),
+(36, '2026-11-06', 9, 'Jam ke-03', 47, 'Sakit', 13),
+(37, '2026-11-06', 9, 'Jam ke-03', 48, 'Hadir', 13),
+(38, '2026-11-06', 9, 'Jam ke-03', 49, 'Hadir', 13),
+(39, '2026-11-06', 9, 'Jam ke-03', 50, 'Izin', 13),
+(40, '2026-11-06', 9, 'Jam ke-03', 51, 'Hadir', 13);
 
 -- --------------------------------------------------------
 
@@ -352,7 +357,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `absensi`
 --
 ALTER TABLE `absensi`
-  MODIFY `id_absensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_absensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `absensi_kegiatan`
