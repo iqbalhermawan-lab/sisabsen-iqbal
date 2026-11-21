@@ -10,6 +10,7 @@ namespace sisabsen_iqbal
     {
         public static int IdUser { get; set; }
         public static string Username { get; set; }
+        public static string Nama { get; set; }
         public static int IdRole { get; set; }
         public static int? IdGuru { get; set; }
 
@@ -17,6 +18,7 @@ namespace sisabsen_iqbal
         {
             IdUser = 0;
             Username = null;
+            Nama = null;
             IdRole = 0;
             IdGuru = null;
         }

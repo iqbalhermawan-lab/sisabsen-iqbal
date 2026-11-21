@@ -52,6 +52,8 @@ namespace sisabsen_iqbal
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.cmbJadwal = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -175,6 +177,8 @@ namespace sisabsen_iqbal
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2Panel1.Controls.Add(this.cmbJadwal);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.cmbJam);
@@ -368,6 +372,33 @@ namespace sisabsen_iqbal
             this.guna2Shapes7.Zoom = 100;
             this.guna2Shapes7.Click += new System.EventHandler(this.guna2Shapes7_Click);
             // 
+            // cmbJadwal
+            // 
+            this.cmbJadwal.BackColor = System.Drawing.Color.White;
+            this.cmbJadwal.BorderRadius = 5;
+            this.cmbJadwal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbJadwal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbJadwal.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbJadwal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbJadwal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbJadwal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbJadwal.ItemHeight = 30;
+            this.cmbJadwal.Location = new System.Drawing.Point(329, 194);
+            this.cmbJadwal.Name = "cmbJadwal";
+            this.cmbJadwal.Size = new System.Drawing.Size(201, 36);
+            this.cmbJadwal.TabIndex = 38;
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(329, 170);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(46, 18);
+            this.guna2HtmlLabel5.TabIndex = 39;
+            this.guna2HtmlLabel5.Text = "Jadwal";
+            // 
             // FAbsenH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,5 +436,7 @@ namespace sisabsen_iqbal
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbJadwal;
     }
 }

@@ -105,6 +105,7 @@ namespace sisabsen_iqbal
 
                     UserSession.IdUser = Convert.ToInt32(db.ds.Tables[0].Rows[0]["id_user"]);
                     UserSession.Username = db.ds.Tables[0].Rows[0]["username"].ToString();
+                    UserSession.Nama = db.ds.Tables[0].Rows[0]["nama"].ToString();
                     UserSession.IdRole = Convert.ToInt32(db.ds.Tables[0].Rows[0]["id_role"]);
 
                     if (UserSession.IdRole == 2 || UserSession.IdRole == 3)

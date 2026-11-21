@@ -244,6 +244,7 @@ namespace sisabsen_iqbal
             this.guna2Button1.Size = new System.Drawing.Size(127, 36);
             this.guna2Button1.TabIndex = 35;
             this.guna2Button1.Text = "CETAK";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel3
             // 

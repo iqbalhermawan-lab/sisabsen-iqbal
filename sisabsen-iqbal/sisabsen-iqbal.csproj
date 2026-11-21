@@ -99,6 +99,12 @@
     <Compile Include="FGuru.Designer.cs">
       <DependentUpon>FGuru.cs</DependentUpon>
     </Compile>
+    <Compile Include="FJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FJadwal.Designer.cs">
+      <DependentUpon>FJadwal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FKelas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMapel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMapel.Designer.cs">
+      <DependentUpon>FMapel.cs</DependentUpon>
     </Compile>
     <Compile Include="FRpt.cs">
       <SubType>Form</SubType>

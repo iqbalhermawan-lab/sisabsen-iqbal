@@ -24,6 +24,7 @@ namespace sisabsen_iqbal
         {
             btnDataM.Visible = false;
             btnAbsenH.Visible = false;
+            btnAbsenK.Visible = false;
 
             switch (UserSession.IdRole)
             {
@@ -34,6 +35,7 @@ namespace sisabsen_iqbal
 
                 case 2: // Walikelas
                     btnAbsenH.Visible = true;
+                    btnAbsenK.Visible = true;
                     break;
 
                 case 3: // Guru
@@ -186,9 +188,8 @@ namespace sisabsen_iqbal
             AturHakAkses();
             timerWaktu.Start();
 
-            // Tampilkan nama user yang login
-            string namaUser = !string.IsNullOrEmpty(UserSession.Username)
-                ? UserSession.Username
+            string namaUser = !string.IsNullOrEmpty(UserSession.Nama)
+                ? UserSession.Nama
                 : "User";
             lblGreeting.Text = $"Selamat Datang, {namaUser}!";
 
@@ -230,6 +231,23 @@ namespace sisabsen_iqbal
         {
             FRpt report = new FRpt() { TopLevel = false, TopMost = true };
             KF.untukForm(report, pnlContent);
+        }
+
+        private void lblGreeting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button8_Click_1(object sender, EventArgs e)
+        {
+            FJadwal jadwal = new FJadwal() { TopLevel = false, TopMost = true };
+            KF.untukForm(jadwal, pnlContent);
+        }
+
+        private void btnMapel_Click(object sender, EventArgs e)
+        {
+            FMapel mapel = new FMapel() { TopLevel = false, TopMost = true };
+            KF.untukForm(mapel, pnlContent);
         }
     }
 }

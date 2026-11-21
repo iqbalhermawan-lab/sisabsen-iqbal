@@ -17,9 +17,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlSide = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -36,7 +36,7 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btnAbsenH = new Guna.UI2.WinForms.Guna2Button();
-            this.FAbsenK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAbsenK = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContent = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvAbsensiTerbaru = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -75,6 +75,8 @@
             this.lblGreeting = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblWaktu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timerWaktu = new System.Windows.Forms.Timer(this.components);
+            this.btnJadwal = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMapel = new Guna.UI2.WinForms.Guna2Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -96,7 +98,7 @@
             this.pnlSide.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSide.Location = new System.Drawing.Point(0, 0);
             this.pnlSide.Name = "pnlSide";
-            this.pnlSide.Size = new System.Drawing.Size(190, 609);
+            this.pnlSide.Size = new System.Drawing.Size(190, 693);
             this.pnlSide.TabIndex = 0;
             // 
             // guna2HtmlLabel4
@@ -125,7 +127,7 @@
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 563);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 647);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(190, 46);
             this.guna2Button1.TabIndex = 4;
@@ -179,7 +181,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnDataM);
             this.flowLayoutPanel1.Controls.Add(this.pnlDP);
             this.flowLayoutPanel1.Controls.Add(this.btnAbsenH);
-            this.flowLayoutPanel1.Controls.Add(this.FAbsenK);
+            this.flowLayoutPanel1.Controls.Add(this.btnAbsenK);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 68);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -237,6 +239,8 @@
             // pnlDP
             // 
             this.pnlDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            this.pnlDP.Controls.Add(this.btnMapel);
+            this.pnlDP.Controls.Add(this.btnJadwal);
             this.pnlDP.Controls.Add(this.guna2Button7);
             this.pnlDP.Controls.Add(this.guna2Button6);
             this.pnlDP.Controls.Add(this.guna2Button5);
@@ -244,7 +248,7 @@
             this.pnlDP.Controls.Add(this.guna2Button3);
             this.pnlDP.Location = new System.Drawing.Point(3, 91);
             this.pnlDP.Name = "pnlDP";
-            this.pnlDP.Size = new System.Drawing.Size(170, 215);
+            this.pnlDP.Size = new System.Drawing.Size(170, 319);
             this.pnlDP.TabIndex = 0;
             this.pnlDP.Visible = false;
             // 
@@ -384,7 +388,7 @@
             this.btnAbsenH.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAbsenH.Image = ((System.Drawing.Image)(resources.GetObject("btnAbsenH.Image")));
             this.btnAbsenH.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAbsenH.Location = new System.Drawing.Point(3, 312);
+            this.btnAbsenH.Location = new System.Drawing.Point(3, 416);
             this.btnAbsenH.Name = "btnAbsenH";
             this.btnAbsenH.Size = new System.Drawing.Size(170, 38);
             this.btnAbsenH.TabIndex = 3;
@@ -392,29 +396,29 @@
             this.btnAbsenH.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAbsenH.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
-            // FAbsenK
+            // btnAbsenK
             // 
-            this.FAbsenK.BorderColor = System.Drawing.Color.Transparent;
-            this.FAbsenK.BorderRadius = 6;
-            this.FAbsenK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FAbsenK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.FAbsenK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.FAbsenK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.FAbsenK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.FAbsenK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.FAbsenK.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.FAbsenK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
-            this.FAbsenK.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(118)))), ((int)(((byte)(110)))));
-            this.FAbsenK.HoverState.ForeColor = System.Drawing.Color.White;
-            this.FAbsenK.Image = ((System.Drawing.Image)(resources.GetObject("FAbsenK.Image")));
-            this.FAbsenK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAbsenK.Location = new System.Drawing.Point(3, 356);
-            this.FAbsenK.Name = "FAbsenK";
-            this.FAbsenK.Size = new System.Drawing.Size(170, 38);
-            this.FAbsenK.TabIndex = 4;
-            this.FAbsenK.Text = "  Absen Kegiatan";
-            this.FAbsenK.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FAbsenK.Click += new System.EventHandler(this.FAbsenK_Click);
+            this.btnAbsenK.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAbsenK.BorderRadius = 6;
+            this.btnAbsenK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbsenK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAbsenK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAbsenK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAbsenK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAbsenK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnAbsenK.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.btnAbsenK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.btnAbsenK.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(118)))), ((int)(((byte)(110)))));
+            this.btnAbsenK.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAbsenK.Image = ((System.Drawing.Image)(resources.GetObject("btnAbsenK.Image")));
+            this.btnAbsenK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAbsenK.Location = new System.Drawing.Point(3, 460);
+            this.btnAbsenK.Name = "btnAbsenK";
+            this.btnAbsenK.Size = new System.Drawing.Size(170, 38);
+            this.btnAbsenK.TabIndex = 4;
+            this.btnAbsenK.Text = "  Absen Kegiatan";
+            this.btnAbsenK.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAbsenK.Click += new System.EventHandler(this.FAbsenK_Click);
             // 
             // guna2Button2
             // 
@@ -432,7 +436,7 @@
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(3, 400);
+            this.guna2Button2.Location = new System.Drawing.Point(3, 504);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(170, 38);
             this.guna2Button2.TabIndex = 45;
@@ -473,21 +477,21 @@
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(190, 0);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(838, 609);
+            this.pnlContent.Size = new System.Drawing.Size(838, 693);
             this.pnlContent.TabIndex = 1;
             // 
             // dgvAbsensiTerbaru
             // 
             this.dgvAbsensiTerbaru.AllowUserToAddRows = false;
             this.dgvAbsensiTerbaru.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.dgvAbsensiTerbaru.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAbsensiTerbaru.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.dgvAbsensiTerbaru.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAbsensiTerbaru.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAbsensiTerbaru.ColumnHeadersHeight = 36;
             this.dgvAbsensiTerbaru.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNama,
@@ -495,14 +499,14 @@
             this.colJam,
             this.colStatus,
             this.colGuru});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAbsensiTerbaru.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAbsensiTerbaru.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAbsensiTerbaru.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.dgvAbsensiTerbaru.Location = new System.Drawing.Point(46, 322);
             this.dgvAbsensiTerbaru.Name = "dgvAbsensiTerbaru";
@@ -882,6 +886,7 @@
             this.lblGreeting.Size = new System.Drawing.Size(119, 22);
             this.lblGreeting.TabIndex = 1;
             this.lblGreeting.Text = "Selamat Datang!";
+            this.lblGreeting.Click += new System.EventHandler(this.lblGreeting_Click);
             // 
             // lblWaktu
             // 
@@ -900,11 +905,57 @@
             this.timerWaktu.Interval = 1000;
             this.timerWaktu.Tick += new System.EventHandler(this.timerWaktu_Tick);
             // 
+            // btnJadwal
+            // 
+            this.btnJadwal.BorderColor = System.Drawing.Color.Transparent;
+            this.btnJadwal.BorderRadius = 5;
+            this.btnJadwal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnJadwal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnJadwal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnJadwal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnJadwal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJadwal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            this.btnJadwal.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.btnJadwal.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.btnJadwal.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnJadwal.Image = ((System.Drawing.Image)(resources.GetObject("btnJadwal.Image")));
+            this.btnJadwal.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnJadwal.Location = new System.Drawing.Point(10, 216);
+            this.btnJadwal.Name = "btnJadwal";
+            this.btnJadwal.Size = new System.Drawing.Size(150, 37);
+            this.btnJadwal.TabIndex = 8;
+            this.btnJadwal.Text = "Jadwal";
+            this.btnJadwal.Click += new System.EventHandler(this.guna2Button8_Click_1);
+            // 
+            // btnMapel
+            // 
+            this.btnMapel.BorderColor = System.Drawing.Color.Transparent;
+            this.btnMapel.BorderRadius = 5;
+            this.btnMapel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMapel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMapel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMapel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMapel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMapel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            this.btnMapel.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnMapel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.btnMapel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.btnMapel.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnMapel.Image = ((System.Drawing.Image)(resources.GetObject("btnMapel.Image")));
+            this.btnMapel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMapel.Location = new System.Drawing.Point(10, 259);
+            this.btnMapel.Name = "btnMapel";
+            this.btnMapel.Size = new System.Drawing.Size(150, 37);
+            this.btnMapel.TabIndex = 9;
+            this.btnMapel.Text = "Mapel";
+            this.btnMapel.Click += new System.EventHandler(this.btnMapel_Click);
+            // 
             // FDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1028, 693);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSide);
             this.Name = "FDashboard";
@@ -949,7 +1000,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button FAbsenK;
+        private Guna.UI2.WinForms.Guna2Button btnAbsenK;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.Timer timerWaktu;
         private Guna.UI2.WinForms.Guna2Shapes shpCard1;
@@ -983,5 +1034,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colGuru;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNoData;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnMapel;
+        private Guna.UI2.WinForms.Guna2Button btnJadwal;
     }
 }

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2026 at 09:17 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Waktu pembuatan: 21 Nov 2026 pada 13.45
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `absensi`
+-- Struktur dari tabel `absensi`
 --
 
 CREATE TABLE `absensi` (
@@ -34,39 +34,45 @@ CREATE TABLE `absensi` (
   `jam_pelajaran` varchar(50) NOT NULL,
   `id_siswa` int(11) NOT NULL,
   `keterangan` enum('Hadir','Izin','Sakit','Alpa') NOT NULL DEFAULT 'Hadir',
-  `id_guru` int(11) NOT NULL
+  `id_guru` int(11) NOT NULL,
+  `id_jadwal` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `absensi`
+-- Dumping data untuk tabel `absensi`
 --
 
-INSERT INTO `absensi` (`id_absensi`, `tanggal`, `id_kelas`, `jam_pelajaran`, `id_siswa`, `keterangan`, `id_guru`) VALUES
-(21, '2026-09-25', 2, 'Jam Ke-01', 6, 'Sakit', 13),
-(22, '2026-09-25', 2, 'Jam Ke-01', 7, 'Hadir', 13),
-(23, '2026-09-25', 2, 'Jam Ke-01', 8, 'Hadir', 13),
-(24, '2026-09-25', 2, 'Jam Ke-01', 9, 'Izin', 13),
-(25, '2026-09-25', 2, 'Jam Ke-01', 10, 'Hadir', 13),
-(26, '2026-10-16', 13, 'Jam ke-02', 57, 'Hadir', 13),
-(27, '2026-10-16', 13, 'Jam ke-02', 58, 'Sakit', 13),
-(28, '2026-10-16', 13, 'Jam ke-02', 59, 'Hadir', 13),
-(29, '2026-10-16', 13, 'Jam ke-02', 60, 'Sakit', 13),
-(30, '2026-10-16', 13, 'Jam ke-02', 61, 'Hadir', 13),
-(31, '2026-10-16', 13, 'Jam ke-03', 57, 'Hadir', 13),
-(32, '2026-10-16', 13, 'Jam ke-03', 58, 'Sakit', 13),
-(33, '2026-10-16', 13, 'Jam ke-03', 59, 'Hadir', 13),
-(34, '2026-10-16', 13, 'Jam ke-03', 60, 'Sakit', 13),
-(35, '2026-10-16', 13, 'Jam ke-03', 61, 'Hadir', 13),
-(36, '2026-11-06', 9, 'Jam ke-03', 47, 'Sakit', 13),
-(37, '2026-11-06', 9, 'Jam ke-03', 48, 'Hadir', 13),
-(38, '2026-11-06', 9, 'Jam ke-03', 49, 'Hadir', 13),
-(39, '2026-11-06', 9, 'Jam ke-03', 50, 'Izin', 13),
-(40, '2026-11-06', 9, 'Jam ke-03', 51, 'Hadir', 13);
+INSERT INTO `absensi` (`id_absensi`, `tanggal`, `id_kelas`, `jam_pelajaran`, `id_siswa`, `keterangan`, `id_guru`, `id_jadwal`) VALUES
+(21, '2026-09-25', 2, 'Jam Ke-01', 6, 'Sakit', 13, NULL),
+(22, '2026-09-25', 2, 'Jam Ke-01', 7, 'Hadir', 13, NULL),
+(23, '2026-09-25', 2, 'Jam Ke-01', 8, 'Hadir', 13, NULL),
+(24, '2026-09-25', 2, 'Jam Ke-01', 9, 'Izin', 13, NULL),
+(25, '2026-09-25', 2, 'Jam Ke-01', 10, 'Hadir', 13, NULL),
+(26, '2026-10-16', 13, 'Jam ke-02', 57, 'Hadir', 13, NULL),
+(27, '2026-10-16', 13, 'Jam ke-02', 58, 'Sakit', 13, NULL),
+(28, '2026-10-16', 13, 'Jam ke-02', 59, 'Hadir', 13, NULL),
+(29, '2026-10-16', 13, 'Jam ke-02', 60, 'Sakit', 13, NULL),
+(30, '2026-10-16', 13, 'Jam ke-02', 61, 'Hadir', 13, NULL),
+(31, '2026-10-16', 13, 'Jam ke-03', 57, 'Hadir', 13, NULL),
+(32, '2026-10-16', 13, 'Jam ke-03', 58, 'Sakit', 13, NULL),
+(33, '2026-10-16', 13, 'Jam ke-03', 59, 'Hadir', 13, NULL),
+(34, '2026-10-16', 13, 'Jam ke-03', 60, 'Sakit', 13, NULL),
+(35, '2026-10-16', 13, 'Jam ke-03', 61, 'Hadir', 13, NULL),
+(36, '2026-11-06', 9, 'Jam ke-03', 47, 'Sakit', 13, NULL),
+(37, '2026-11-06', 9, 'Jam ke-03', 48, 'Hadir', 13, NULL),
+(38, '2026-11-06', 9, 'Jam ke-03', 49, 'Hadir', 13, NULL),
+(39, '2026-11-06', 9, 'Jam ke-03', 50, 'Izin', 13, NULL),
+(40, '2026-11-06', 9, 'Jam ke-03', 51, 'Hadir', 13, NULL),
+(41, '2026-11-21', 2, 'Jam ke-01', 6, 'Hadir', 8, 2),
+(42, '2026-11-21', 2, 'Jam ke-01', 7, 'Hadir', 8, 2),
+(43, '2026-11-21', 2, 'Jam ke-01', 8, 'Izin', 8, 2),
+(44, '2026-11-21', 2, 'Jam ke-01', 9, 'Hadir', 8, 2),
+(45, '2026-11-21', 2, 'Jam ke-01', 10, 'Hadir', 8, 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `absensi_kegiatan`
+-- Struktur dari tabel `absensi_kegiatan`
 --
 
 CREATE TABLE `absensi_kegiatan` (
@@ -80,7 +86,7 @@ CREATE TABLE `absensi_kegiatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `absensi_kegiatan`
+-- Dumping data untuk tabel `absensi_kegiatan`
 --
 
 INSERT INTO `absensi_kegiatan` (`id_absen_kegiatan`, `tanggal`, `nama_kegiatan`, `id_kelas`, `id_siswa`, `keterangan`, `id_guru`) VALUES
@@ -98,7 +104,7 @@ INSERT INTO `absensi_kegiatan` (`id_absen_kegiatan`, `tanggal`, `nama_kegiatan`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `guru`
+-- Struktur dari tabel `guru`
 --
 
 CREATE TABLE `guru` (
@@ -109,7 +115,7 @@ CREATE TABLE `guru` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `guru`
+-- Dumping data untuk tabel `guru`
 --
 
 INSERT INTO `guru` (`id_guru`, `nip`, `nama_guru`, `id_user`) VALUES
@@ -125,12 +131,36 @@ INSERT INTO `guru` (`id_guru`, `nip`, `nama_guru`, `id_user`) VALUES
 (10, '202610102020081010', 'Joko', 12),
 (11, '202611112021092011', 'Kartika Sari', 13),
 (12, '202612122022101012', 'Lukman', 14),
-(13, '202613102912830906', 'Tri Aditya', 15);
+(13, '202613102912830906', 'Tri Aditya', 15),
+(14, '2026301120302100210', 'Arifin', 16);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kelas`
+-- Struktur dari tabel `jadwal_mengajar`
+--
+
+CREATE TABLE `jadwal_mengajar` (
+  `id_jadwal` int(11) NOT NULL,
+  `hari` enum('Senin','Selasa','Rabu','Kamis','Jumat','Sabtu') NOT NULL,
+  `jam_pelajaran` varchar(50) NOT NULL,
+  `id_kelas` int(11) NOT NULL,
+  `id_mapel` int(11) NOT NULL,
+  `id_guru` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `jadwal_mengajar`
+--
+
+INSERT INTO `jadwal_mengajar` (`id_jadwal`, `hari`, `jam_pelajaran`, `id_kelas`, `id_mapel`, `id_guru`) VALUES
+(1, 'Senin', 'Jam ke-01', 1, 2, 13),
+(2, 'Sabtu', 'Jam ke-01', 2, 3, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kelas`
 --
 
 CREATE TABLE `kelas` (
@@ -141,7 +171,7 @@ CREATE TABLE `kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `kelas`
+-- Dumping data untuk tabel `kelas`
 --
 
 INSERT INTO `kelas` (`id_kelas`, `tingkat`, `nama_kelas`, `id_guru`) VALUES
@@ -161,7 +191,30 @@ INSERT INTO `kelas` (`id_kelas`, `tingkat`, `nama_kelas`, `id_guru`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Struktur dari tabel `mapel`
+--
+
+CREATE TABLE `mapel` (
+  `id_mapel` int(11) NOT NULL,
+  `kode_mapel` varchar(20) NOT NULL,
+  `nama_mapel` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `mapel`
+--
+
+INSERT INTO `mapel` (`id_mapel`, `kode_mapel`, `nama_mapel`) VALUES
+(1, 'MTK', 'Matematika'),
+(2, 'BIN', 'Bahasa Indonesia'),
+(3, 'BIG', 'Bahasa Inggris'),
+(4, 'IPA', 'Ilmu Pengetahuan Alam'),
+(5, 'IPS', 'Ilmu Pengetahuan Sosial');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `roles`
 --
 
 CREATE TABLE `roles` (
@@ -170,7 +223,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `roles`
+-- Dumping data untuk tabel `roles`
 --
 
 INSERT INTO `roles` (`id_role`, `role`) VALUES
@@ -181,7 +234,7 @@ INSERT INTO `roles` (`id_role`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siswa`
+-- Struktur dari tabel `siswa`
 --
 
 CREATE TABLE `siswa` (
@@ -193,7 +246,7 @@ CREATE TABLE `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data untuk tabel `siswa`
 --
 
 INSERT INTO `siswa` (`id_siswa`, `nis`, `nama`, `jenis_kelamin`, `id_kelas`) VALUES
@@ -261,7 +314,7 @@ INSERT INTO `siswa` (`id_siswa`, `nis`, `nama`, `jenis_kelamin`, `id_kelas`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -273,40 +326,42 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id_user`, `username`, `password`, `id_role`, `nama`) VALUES
 (1, 'admin1', '$2a$11$F4ktwyPGUMQ4iHPNu/9S.u9zZO2s2jEHstmNlIQbCBWtRgbVe7jDa', 1, 'Iqbal'),
-(2, 'user1', '$2a$11$aKG/xHuI/tSMdT5KdCWofeWwCqfGC8pGfheUWsi4zWLBsIagn1Ute', 2, 'ibam1'),
-(3, 'user2', '$2a$11$l/FAhySao20APD15DyJwjeizjuEc1XuGCD6MpsqzdXfjAvzR7kQ/y', 2, 'ibam2'),
-(5, 'user3', '$2a$11$Td8CXDflxP5wAbODbnmDX.azbMiTiPA7/gKE9jNeKV/8mYai41JgG', 2, 'ibam3'),
-(6, 'user4', '$2a$11$0JLkOgdxRx/hGKA7/uJZoe5RWkjCdkDDdGflOzby7of1gNfOb8o8q', 2, 'ibam4'),
-(7, 'user5', '$2a$11$QE81MlsSsAysvsXnAoAqseCRz8cW8d9pOWBtXB3c/cynQeSEkaiIu', 2, 'ibam5'),
-(8, 'user6', '$2a$11$HipGnCk0EMftfx4iigg/wuwnabhKqL7zwyLDWFhxCWSJ8keQ8LQ3u', 2, 'ibam6'),
-(9, 'user7', '$2a$11$I7i0LAd0sxtohsTY2L6gC.ZAMAEo5sxlDo7vpB0nw59swMow4DnTq', 2, 'ibam7'),
-(10, 'user8', '$2a$11$jAgff0b8S22VNsINWLL..u0bKW1Xic7Emq57rKHGRDcCd/Xcquho6', 2, 'ibam8'),
-(11, 'user9', '$2a$11$6U//PUAdfyAIsbPboeKQwey0YpneIChSxav9dKmbtHwr.JWAe0MTm', 2, 'ibam9'),
-(12, 'user10', '$2a$11$Mn8.moZDwRzEtIFxqJR89OG899VEXLFfMCG4EN4HQUdSynjBiv8S6', 2, 'ibam10'),
-(13, 'user11', '$2a$11$29Kowz.rLBDgl/mKykG5LefId66TS307ctPc5f0vT9PVppv9BiDua', 2, 'ibam11'),
-(14, 'user12', '$2a$11$l6rR5yuxIGhLF57uemIZ9.iruaMPs7NuORVh40A5gz11gUD/fUEWm', 2, 'ibam12'),
-(15, 'guru1', '$2a$11$vPam.YSB4qplLTOfA.ZHNu8NFrJUZCD/mK8T/Iy.DNTA5OufZcwNW', 3, 'ibam13');
+(2, 'user1', '$2a$11$aKG/xHuI/tSMdT5KdCWofeWwCqfGC8pGfheUWsi4zWLBsIagn1Ute', 2, 'Ahmad Fauzi'),
+(3, 'user2', '$2a$11$l/FAhySao20APD15DyJwjeizjuEc1XuGCD6MpsqzdXfjAvzR7kQ/y', 2, 'Siti Aminah'),
+(5, 'user3', '$2a$11$Td8CXDflxP5wAbODbnmDX.azbMiTiPA7/gKE9jNeKV/8mYai41JgG', 2, 'Budi Santoso'),
+(6, 'user4', '$2a$11$0JLkOgdxRx/hGKA7/uJZoe5RWkjCdkDDdGflOzby7of1gNfOb8o8q', 2, 'Dewi Lestari'),
+(7, 'user5', '$2a$11$QE81MlsSsAysvsXnAoAqseCRz8cW8d9pOWBtXB3c/cynQeSEkaiIu', 2, 'Eko Prasetyo'),
+(8, 'user6', '$2a$11$HipGnCk0EMftfx4iigg/wuwnabhKqL7zwyLDWFhxCWSJ8keQ8LQ3u', 2, 'Fitri Handayani'),
+(9, 'user7', '$2a$11$I7i0LAd0sxtohsTY2L6gC.ZAMAEo5sxlDo7vpB0nw59swMow4DnTq', 2, 'Gunawan'),
+(10, 'user8', '$2a$11$jAgff0b8S22VNsINWLL..u0bKW1Xic7Emq57rKHGRDcCd/Xcquho6', 2, 'Sri Rahmawati'),
+(11, 'user9', '$2a$11$6U//PUAdfyAIsbPboeKQwey0YpneIChSxav9dKmbtHwr.JWAe0MTm', 2, 'Irfan Hakim'),
+(12, 'user10', '$2a$11$Mn8.moZDwRzEtIFxqJR89OG899VEXLFfMCG4EN4HQUdSynjBiv8S6', 2, 'Joko'),
+(13, 'user11', '$2a$11$29Kowz.rLBDgl/mKykG5LefId66TS307ctPc5f0vT9PVppv9BiDua', 2, 'Kartika Sari'),
+(14, 'user12', '$2a$11$l6rR5yuxIGhLF57uemIZ9.iruaMPs7NuORVh40A5gz11gUD/fUEWm', 2, 'Lukman'),
+(15, 'guru1', '$2a$11$vPam.YSB4qplLTOfA.ZHNu8NFrJUZCD/mK8T/Iy.DNTA5OufZcwNW', 3, 'Tri Aditya'),
+(16, 'guru2', '$2a$11$mAYvuUsWh1bBYyRbwj9kN.FRCFkuMqkuPG6KrblheeYJ4EwwkSyWK', 3, 'Arifin');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `absensi`
+-- Indeks untuk tabel `absensi`
 --
 ALTER TABLE `absensi`
   ADD PRIMARY KEY (`id_absensi`),
   ADD KEY `id_kelas` (`id_kelas`),
   ADD KEY `id_siswa` (`id_siswa`),
-  ADD KEY `id_guru` (`id_guru`);
+  ADD KEY `id_guru` (`id_guru`),
+  ADD KEY `fk_absensi_jadwal` (`id_jadwal`);
 
 --
--- Indexes for table `absensi_kegiatan`
+-- Indeks untuk tabel `absensi_kegiatan`
 --
 ALTER TABLE `absensi_kegiatan`
   ADD PRIMARY KEY (`id_absen_kegiatan`),
@@ -315,27 +370,44 @@ ALTER TABLE `absensi_kegiatan`
   ADD KEY `id_guru` (`id_guru`);
 
 --
--- Indexes for table `guru`
+-- Indeks untuk tabel `guru`
 --
 ALTER TABLE `guru`
   ADD PRIMARY KEY (`id_guru`),
   ADD KEY `id_user` (`id_user`);
 
 --
--- Indexes for table `kelas`
+-- Indeks untuk tabel `jadwal_mengajar`
+--
+ALTER TABLE `jadwal_mengajar`
+  ADD PRIMARY KEY (`id_jadwal`),
+  ADD UNIQUE KEY `unik_jadwal_kelas` (`hari`,`jam_pelajaran`,`id_kelas`),
+  ADD KEY `fk_jadwal_kelas` (`id_kelas`),
+  ADD KEY `fk_jadwal_mapel` (`id_mapel`),
+  ADD KEY `fk_jadwal_guru` (`id_guru`);
+
+--
+-- Indeks untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
   ADD PRIMARY KEY (`id_kelas`),
   ADD KEY `fk_kelas_guru` (`id_guru`);
 
 --
--- Indexes for table `roles`
+-- Indeks untuk tabel `mapel`
+--
+ALTER TABLE `mapel`
+  ADD PRIMARY KEY (`id_mapel`),
+  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+
+--
+-- Indeks untuk tabel `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id_role`);
 
 --
--- Indexes for table `siswa`
+-- Indeks untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`id_siswa`),
@@ -343,72 +415,85 @@ ALTER TABLE `siswa`
   ADD KEY `fk_siswa_kelas` (`id_kelas`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`),
   ADD KEY `id_role` (`id_role`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `absensi`
+-- AUTO_INCREMENT untuk tabel `absensi`
 --
 ALTER TABLE `absensi`
-  MODIFY `id_absensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_absensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT for table `absensi_kegiatan`
+-- AUTO_INCREMENT untuk tabel `absensi_kegiatan`
 --
 ALTER TABLE `absensi_kegiatan`
   MODIFY `id_absen_kegiatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `guru`
+-- AUTO_INCREMENT untuk tabel `guru`
 --
 ALTER TABLE `guru`
-  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `kelas`
+-- AUTO_INCREMENT untuk tabel `jadwal_mengajar`
+--
+ALTER TABLE `jadwal_mengajar`
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
   MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT untuk tabel `mapel`
+--
+ALTER TABLE `mapel`
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT untuk tabel `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `siswa`
+-- AUTO_INCREMENT untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `absensi`
+-- Ketidakleluasaan untuk tabel `absensi`
 --
 ALTER TABLE `absensi`
   ADD CONSTRAINT `fk_absensi_guru` FOREIGN KEY (`id_guru`) REFERENCES `guru` (`id_guru`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_absensi_jadwal` FOREIGN KEY (`id_jadwal`) REFERENCES `jadwal_mengajar` (`id_jadwal`) ON DELETE SET NULL ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_absensi_kelas` FOREIGN KEY (`id_kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_absensi_siswa` FOREIGN KEY (`id_siswa`) REFERENCES `siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `absensi_kegiatan`
+-- Ketidakleluasaan untuk tabel `absensi_kegiatan`
 --
 ALTER TABLE `absensi_kegiatan`
   ADD CONSTRAINT `absensi_kegiatan_ibfk_1` FOREIGN KEY (`id_kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -416,25 +501,33 @@ ALTER TABLE `absensi_kegiatan`
   ADD CONSTRAINT `absensi_kegiatan_ibfk_3` FOREIGN KEY (`id_guru`) REFERENCES `guru` (`id_guru`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `guru`
+-- Ketidakleluasaan untuk tabel `guru`
 --
 ALTER TABLE `guru`
   ADD CONSTRAINT `fk_guru_user` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 --
--- Constraints for table `kelas`
+-- Ketidakleluasaan untuk tabel `jadwal_mengajar`
+--
+ALTER TABLE `jadwal_mengajar`
+  ADD CONSTRAINT `fk_jadwal_guru` FOREIGN KEY (`id_guru`) REFERENCES `guru` (`id_guru`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_jadwal_kelas` FOREIGN KEY (`id_kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_jadwal_mapel` FOREIGN KEY (`id_mapel`) REFERENCES `mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Ketidakleluasaan untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
   ADD CONSTRAINT `fk_kelas_guru` FOREIGN KEY (`id_guru`) REFERENCES `guru` (`id_guru`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 --
--- Constraints for table `siswa`
+-- Ketidakleluasaan untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   ADD CONSTRAINT `fk_siswa_kelas` FOREIGN KEY (`id_kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 --
--- Constraints for table `users`
+-- Ketidakleluasaan untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `roles` (`id_role`) ON UPDATE CASCADE;
